@@ -98,7 +98,7 @@ print(players)
 
 l = {"🔴": re, "🔵": bl, "🟢": gr, "🟡": ye}
 
-admins = [795820947378405436]
+admins = [795820947378405436] #In a list so I can add more if need be (which I have done)
 times = [0, 1, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
 
 timer = 60
