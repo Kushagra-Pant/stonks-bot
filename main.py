@@ -741,20 +741,6 @@ async def on_message(message):
         else:
             await message.channel.send("You don't have permission to restart the game!")
 
-    if message.content.startswith('0diefenbaker'):
-        o = open("diefenbaker.txt")
-        r = o.readlines()
-        dief = 0
-        for i in r:
-            dief = dief + 1
-        diefen = random.randint(0, dief)
-        quote = r[diefen].strip()
-        quote = "\"" + quote + "\"\n -John G. Diefenbaker"
-        await message.channel.send(quote)
-    if message.content.startswith('0txt'):
-        await message.channel.send("zamn", file=discord.File("info.txt"))
-
-
 try:
     client.run(os.getenv("TOKEN"))
 except discord.HTTPException as e:
